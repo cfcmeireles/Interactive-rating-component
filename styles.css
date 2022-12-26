@@ -1,0 +1,146 @@
+body {
+  background-color: hsl(216, 12%, 8%);
+  font-family: "Overpass", sans-serif;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  bottom: 10px;
+  position: absolute;
+  color: hsl(0, 0%, 100%);
+}
+
+.attribution a {
+  color: hsl(25, 97%, 53%);
+}
+
+#rating-app {
+  display: flex;
+  align-items: center;
+  height: 90vh;
+}
+
+#card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 20px;
+  max-width: 330px;
+  margin: auto;
+  background-color: hsl(213, 19%, 18%);
+  padding: 30px;
+}
+
+.submit-btn {
+  background-color: hsl(25, 97%, 53%);
+  padding: 10px 135px;
+  border-radius: 20px;
+  color: hsl(0, 0%, 100%);
+  font-size: 15px;
+  border-width: 0;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.submit-btn:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+
+h2 {
+  color: hsl(0, 0%, 100%);
+}
+
+.thank-you {
+  text-align: center;
+}
+
+p {
+  color: hsl(217, 12%, 63%);
+  font-size: 15px;
+}
+
+.rating-msg {
+  text-align: center;
+}
+
+.rating {
+  text-align: center;
+}
+
+.number {
+  background-color: hsl(216, 12%, 8%);
+  color: hsl(217, 12%, 63%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border-width: 0;
+  margin-left: 15px;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.number:focus {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+
+.number:hover {
+  background-color: hsl(217, 12%, 63%);
+  color: hsl(0, 0%, 100%);
+}
+
+.number:nth-child(1) {
+  margin-left: 0px;
+}
+
+.star {
+  border: 2px hsl(216, 12%, 8%) solid;
+  border-radius: 50%;
+  background: hsl(216, 12%, 8%);
+  padding: 10px;
+}
+
+.thanku {
+  display: block;
+  margin: 0 auto;
+}
+
+.rating {
+  color: hsl(25, 97%, 53%);
+  border: hsl(216, 12%, 8%) solid;
+  background: hsl(216, 12%, 8%);
+  border-radius: 20px;
+  margin: auto;
+  width: 50%;
+  margin-top: 20px;
+  padding: 5px;
+}
+
+/* Mobile 375px design*/
+
+@media only screen and (max-width: 375px) {
+  #card {
+    max-width: 300px;
+    max-height: 375px;
+  }
+
+  .number {
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+  }
+
+  .number:focus {
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+  }
+
+  .submit-btn {
+    padding: 10px 120px;
+  }
+
+  .rating {
+    width: 55%;
+  }
+}
