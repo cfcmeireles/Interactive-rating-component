@@ -21,14 +21,28 @@ body {
   height: 90vh;
 }
 
-#card {
+.card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
   border-radius: 20px;
-  max-width: 330px;
+  max-width: 340px;
   margin: auto;
   background-color: hsl(213, 19%, 18%);
   padding: 30px;
+}
+
+.card.active {
+  animation: fadeInAnimation ease 1s;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .submit-btn {
@@ -45,6 +59,11 @@ body {
 .submit-btn:hover {
   background-color: hsl(0, 0%, 100%);
   color: hsl(25, 97%, 53%);
+}
+
+h1 {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.5em;
 }
 
 h2 {
@@ -117,10 +136,62 @@ p {
   padding: 5px;
 }
 
-/* Mobile 375px design*/
+.test {
+  display: none;
+}
 
-@media only screen and (max-width: 375px) {
-  #card {
+/* Mobile design*/
+
+@media only screen and (max-width: 280px) {
+  .card {
+    max-width: 200px;
+    max-height: 300px;
+  }
+
+  .number {
+    width: 29px;
+    height: 29px;
+    margin-left: 7px;
+    margin-bottom: 20px;
+  }
+
+  .number:focus {
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+  }
+
+  .submit-btn {
+    padding: 10px 70px;
+  }
+
+  .attribution {
+    font-size: 8px;
+  }
+}
+
+@media only screen and (min-width: 281px) and (max-width: 360px) {
+  .card {
+    max-width: 280px;
+  }
+
+  .number {
+    width: 36px;
+    height: 36px;
+    margin-left: 20px;
+  }
+
+  .number:focus {
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+  }
+
+  .submit-btn {
+    padding: 10px 110px;
+  }
+}
+
+@media only screen and (min-width: 361px) and (max-width: 490px) {
+  .card {
     max-width: 300px;
     max-height: 375px;
   }

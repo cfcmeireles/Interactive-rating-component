@@ -1,7 +1,7 @@
 (function () {
   "use strict";
 
-  const card = document.querySelector("#card");
+  const card = document.querySelector(".card");
   const submit_btn = document.querySelector(".submit-btn");
   const nums = document.querySelectorAll(".number");
   let rating = [];
@@ -16,6 +16,7 @@
     if (rating.length === 0) {
       location.reload();
     } else {
+      card.classList.toggle("active");
       card.innerHTML = `<img class="thanku" src="images/illustration-thank-you.svg">
         <p class="rating">You selected ${rating} out of 5</p>
         <h2 class="thank-you">Thank you!</h2>
