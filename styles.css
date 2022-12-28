@@ -136,10 +136,6 @@ p {
   padding: 5px;
 }
 
-.test {
-  display: none;
-}
-
 /* Mobile design*/
 
 @media only screen and (max-width: 280px) {
