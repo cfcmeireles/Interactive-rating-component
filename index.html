@@ -12,13 +12,11 @@
     <script src="script.js" defer></script>
     <title>Frontend Mentor | Interactive rating component</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body>
-    <!-- Rating state start -->
-    <main>
-      <div id="rating-app">
-        <div class="card">
+    <main id="rating-app">
+
+        <section id="card">
           <img class="star" src="images/icon-star.svg" alt="star icon" />
 
           <h1>How did we do?</h1>
@@ -30,8 +28,15 @@
           <div class="submit">
             <button class="submit-btn">SUBMIT</button>
           </div>
-        </div>
-      </div>
+        </section>
+
+      <section id="thanks-card">
+        <img class="thank-you" src="images/illustration-thank-you.svg" alt="thank you card">
+        <p class="rating">You selected <span class="rating-number"> </span> out of 5</p>
+        <h2>Thank you!</h2>
+        <p>We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
+      </section>
+
       <div class="attribution">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://github.com/cfcmeireles" target="_blank">Carina Meireles</a>.</div>
     </main>
   </body>

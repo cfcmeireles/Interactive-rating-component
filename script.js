@@ -1,10 +1,12 @@
 (function () {
   "use strict";
 
-  const card = document.querySelector(".card");
+  const card = document.querySelector("#card");
+  const thanks_card = document.querySelector("#thanks-card");
+  const rating_number = document.querySelector(".rating-number")
   const submit_btn = document.querySelector(".submit-btn");
   const nums = document.querySelectorAll(".number");
-  let rating = [];
+  let rating = 0;
 
   nums.forEach((num) => {
     num.addEventListener("click", () => {
@@ -16,11 +18,9 @@
     if (rating.length === 0) {
       location.reload();
     } else {
-      card.classList.toggle("active");
-      card.innerHTML = `<img class="thanku" src="images/illustration-thank-you.svg">
-        <p class="rating">You selected ${rating} out of 5</p>
-        <h2 class="thank-you">Thank you!</h2>
-        <p class="rating-msg">We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>`;
+      card.style.display = "none";
+      thanks_card.style.display = "block";
+      rating_number.innerHTML = rating;
     }
   });
 })();
