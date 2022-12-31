@@ -6,7 +6,7 @@
   const rating_number = document.querySelector(".rating-number")
   const submit_btn = document.querySelector(".submit-btn");
   const nums = document.querySelectorAll(".number");
-  let rating = 0;
+  let rating = [];
 
   nums.forEach((num) => {
     num.addEventListener("click", () => {
