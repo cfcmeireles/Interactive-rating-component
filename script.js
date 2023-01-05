@@ -15,7 +15,7 @@
   });
 
   submit_btn.addEventListener("click", () => {
-    if (rating === 0) {
+    if (rating.length === 0) {
       location.reload();
     } else {
       card.style.display = "none";
