@@ -15,9 +15,7 @@
   });
 
   submit_btn.addEventListener("click", () => {
-    if (rating === 0) {
-      
-    } else {
+    if (rating > 0) {
       card.style.display = "none";
       thanks_card.style.display = "block";
       rating_number.innerHTML = rating;
