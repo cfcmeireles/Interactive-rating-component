@@ -6,7 +6,7 @@
   const rating_number = document.querySelector(".rating-number")
   const submit_btn = document.querySelector(".submit-btn");
   const nums = document.querySelectorAll(".number");
-  let rating = [];
+  let rating = 0;
 
   nums.forEach((num) => {
     num.addEventListener("click", () => {
@@ -15,7 +15,7 @@
   });
 
   submit_btn.addEventListener("click", () => {
-    if (rating.length === 0) {
+    if (rating === 0) {
       location.reload();
     } else {
       card.style.display = "none";
