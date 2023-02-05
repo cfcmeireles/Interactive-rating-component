@@ -92,7 +92,7 @@ p {
   margin-bottom: 30px;
 }
 
-.number:focus {
+.number.active {
   background-color: hsl(25, 97%, 53%);
   color: hsl(0, 0%, 100%);
 }
@@ -144,7 +144,7 @@ p {
     margin-bottom: 20px;
   }
 
-  .number:focus {
+  .number.active {
     background-color: hsl(25, 97%, 53%);
     color: hsl(0, 0%, 100%);
   }
@@ -169,7 +169,7 @@ p {
     margin-left: 20px;
   }
 
-  .number:focus {
+  .number.active {
     background-color: hsl(25, 97%, 53%);
     color: hsl(0, 0%, 100%);
   }
@@ -191,7 +191,7 @@ p {
     margin-left: 20px;
   }
 
-  .number:focus {
+  .number.active {
     background-color: hsl(25, 97%, 53%);
     color: hsl(0, 0%, 100%);
   }
